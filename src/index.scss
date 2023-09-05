@@ -1,0 +1,81 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap');
+
+// Color Variables
+$primaryBackgroundColor: #000;
+$textColor: #fff;
+$subduedTextColor: rgb(155, 169, 180);
+
+// Font Variables
+$headingFontWeight: 800;
+$bodyFontFamily: 'Source Sans Pro', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $primaryBackgroundColor;
+}
+
+body {
+    font-family: $bodyFontFamily;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: $headingFontWeight;
+    color: $textColor;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: $headingFontWeight;
+    color: #eceded;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #eceded;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+p {
+    font-size: 1.5rem;
+    color: rgb(155 169 180);
+}
+
+img {
+    border-radius: 8px;
+    border-style: none;
+}
+
+section {
+    line-height: inherit;
+    position: relative;
+    padding: 5% 0;
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+main {
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s;
+}

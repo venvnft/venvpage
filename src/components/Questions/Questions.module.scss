@@ -1,0 +1,58 @@
+.section {
+    &__container {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+
+        @media (min-width: 640px) {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        &__block {
+            &__header {
+                margin: 0 auto;
+                max-width: 100%;
+                padding-bottom: 5%;
+                text-align: center;
+
+                &__name {
+                    color: #fff;
+                }
+            }
+
+            &__ul {
+                list-style: none;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 5%;
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .section {
+        padding: 10% 0;
+        
+        &__container {
+            padding: 5% 0;
+            min-width: 90%;
+            width: 100%;
+
+            &__block {
+                &__header {
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 15%;
+                }
+
+                &__ul {
+                    width: 100%;
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}

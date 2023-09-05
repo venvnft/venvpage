@@ -1,0 +1,36 @@
+.item {
+	display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    margin: 2%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background: rgb(242, 242, 242);
+    border-radius: 60px;
+    width: 310px;
+    height: 225px;
+
+    @media (max-width: 940px) {
+        height: 140px;
+        width: 100%;
+    }
+
+    &__image {
+    	width: 20%;
+    	background-color: #fff;
+    	border-radius: 50%;
+    }
+
+    &__name {
+    	background: rgb(242, 242, 242);
+    	color: rgb(150, 150, 150);
+    	margin-left: 5%;
+    }
+}
+
+.item:hover {
+	filter: none;
+	opacity: 1;
+}

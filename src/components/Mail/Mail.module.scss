@@ -1,0 +1,146 @@
+.section {
+	&__container {
+		width: 70%;
+		margin: auto;
+		padding-left: 5%;
+		padding-right: 5%;
+
+		@media (min-width: 640px) {
+			padding-left: 2%;
+		    padding-right: 2%;
+		}
+
+		&__block {
+			align-items: center;
+			justify-content: space-between;
+
+			@media (min-width: 1024px) {
+				display: flex;
+			}
+
+			@media (min-width: 768px) {
+				padding-top: 4%;
+			    padding-bottom: 4%;
+			}
+
+			&__content {
+				@media (min-width: 1024px) {
+					padding: 0;
+					width: 50%;
+				}
+
+				&__title {
+					text-transform: capitalize;
+					margin-bottom: 4%;
+				}
+
+				&__text {
+					font-family: serif;
+				}
+			}
+		}
+	}
+}
+
+.links {
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+	&__button, &__mail {
+		border-radius: 9999px;
+		border-width: 1px;
+		display: inline-block;
+		font-size: 1.5rem;
+		margin-right: 5%;
+		padding: 2% 5%;
+		color: rgba(255,255,255);
+		border-color: rgba(128,90,213);
+	    background-color: rgba(128,90,213);
+	 	color: rgba(0,0,0);
+	}
+
+	&__button {
+		margin-bottom: 2%;
+		font-family: serif;
+		user-select: none;
+
+		&__icon {
+			background-color: rgba(128,90,213);
+			color: #000;
+			width: 30%;
+
+			@media (max-width: 940px) {
+				width: 10%;
+			}
+		}
+	}
+
+	&__mail {
+        background-color: rgba(203,213,224);
+	}
+}
+
+.image {
+    @media (min-width: 1024px) {
+	    width: 50%;
+    }
+
+    @media (max-width: 940px)  {
+    	width: 100%;
+		padding: 0;
+    }
+
+    &__img {
+        display: block;
+	    vertical-align: middle;
+        max-width: 100%;
+	    height: auto;
+        transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+	.links__button,
+	.links__mail {
+		display: flex;
+		margin: 2% 0;
+		padding: 2% 2%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.links__button {
+		&__icon {
+			justify-content: center;
+			align-items: center;
+			margin-right: 5%;
+		}
+	}
+
+	.image {
+		width: 90%;
+		padding-left: 5%;
+
+		&__img {
+			transform: none;
+		}
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.section {
+		padding: 10% 0;
+
+		&__container {
+			width: 90%;
+
+			&__block {
+				&__content {
+					&__title, &__text{
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

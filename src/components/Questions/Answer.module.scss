@@ -1,0 +1,47 @@
+.li:nth-child(1) {
+    border-top: 0;
+}
+
+.li:nth-child(5) {
+    border-bottom: 0;
+}
+
+.li {
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-image: linear-gradient(to right, white, purple, black) 1 0;
+
+    &__answer {
+        overflow: hidden;
+        
+        &__text {
+            padding-bottom: 2.5%;
+            color: #fff;
+        }
+    }
+}
+
+.button {
+    text-transform: none;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: left;
+    font-weight: 500;
+    border: none;
+
+    &__image {
+        display: block;
+        vertical-align: middle;
+        margin-right: 3%;
+        margin-left: -3%;
+        height: 2rem;
+        width: 2rem;
+        flex-shrink: 0;
+        opacity: 1;
+        color: rgb(51 140 245);
+    }
+}

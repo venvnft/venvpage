@@ -1,0 +1,105 @@
+.footer {
+	box-sizing: inherit;
+    position: relative;
+    width: 100%;
+	height: auto;
+	z-index: 30;
+
+	@media (max-width: 640px) {
+		text-align: center;
+	}
+
+	&__container {
+		max-width: 90%;
+		width: 100%;
+	    margin: 0 auto;
+	    box-sizing: inherit;
+
+	    @media (min-width: 481px) {
+	    	padding: 0 6%;
+	    }
+
+	    &__block {
+    	    box-sizing: inherit;
+
+    	    &__header {
+	    	    box-sizing: inherit;
+			    line-height: 22px;
+		        padding-bottom: 1%;
+
+		        &__brand {
+		        	box-sizing: inherit;
+
+		        	@media (max-width: 640px) {
+		        		margin-bottom: 6%;	
+		        	}
+
+				    &__name {
+				    	font-family: 'Bodoni Moda', serif;
+			    	    box-sizing: inherit;
+
+			    	    &__link {
+			    	    	color: #eceded;
+			    	    	box-sizing: inherit;
+			    	    }
+				    }
+		        }
+    	    }
+
+    	    &__content {
+	    	    box-sizing: inherit;
+		        padding-top: 1%;
+
+		        &__copyright {
+			        box-sizing: inherit;
+				    color: #9ca9b3;
+				    
+				    &__link {
+				    	box-sizing: inherit;
+			    	    color: #eceded;
+				    }    
+		        }
+    	    }
+	    }
+	}
+}
+
+@media screen and (min-width: 641px) {
+	.footer__container__block {
+	    padding: 3% 0;
+
+	    &__header {
+	    	display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+
+		    &__barnd{
+		    	&__name {
+	    		    letter-spacing: -.3px;
+				    line-height: 62px;
+		    	}
+		    }
+	    }
+
+	    &__content {
+	    	display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+	    }
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.footer {
+	    margin-top: 10%;
+
+	    &__container {
+		    padding-left: 1%;
+		    padding-right: 1%;
+
+		    &__block {
+	    	    padding: 5% 0;
+		    }
+	    }
+	}
+}

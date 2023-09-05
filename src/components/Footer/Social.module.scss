@@ -1,0 +1,35 @@
+.social {
+    box-sizing: inherit;
+
+    &__ul {
+    	list-style: none;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: center;
+	    white-space: nowrap;
+	    margin: 0 -1%;
+    }
+}
+
+.li {
+    box-sizing: inherit;
+    padding: 0 0.01%;
+
+    &__link {
+    	box-sizing: inherit;
+	    color: #eceded;
+	    display: flex;
+        padding: 8px;
+
+        &__image {
+        	box-sizing: inherit;
+        	font-size: 1.5rem;
+        	display: block;
+		    height: auto;
+		    max-width: 100%;
+		    overflow: hidden;
+		    fill: #8476D9;
+        }
+    }
+}

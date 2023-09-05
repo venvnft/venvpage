@@ -1,0 +1,131 @@
+.item {
+	display: flex;
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
+}
+
+.description {
+    &__name {
+	    clear: both;
+	    overflow-wrap: break-word;
+	    margin-bottom: 5%;
+    }
+
+    &__text {
+	    line-height: 35px;
+    }
+}
+
+.image {
+    position: relative;
+
+    &__img{
+	    display: block;
+	    height: auto;
+	    max-width: 90%;
+	    width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) {
+	.item {
+		padding-top: 2%;
+	    padding-bottom: 2%;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    align-items: center;
+	    justify-content: flex-start;
+	}
+
+	.item:nth-child(2) {
+    	justify-content: flex-end;
+	}
+    
+    .description {
+        flex-shrink: 0;
+	    margin-bottom: 0;
+	    margin-right: 1%;
+        opacity: 1;
+	    transform: translate(0);
+
+	    @media (min-width: 940px) {
+	    	width: 50%;
+	    }
+
+	    &__name {
+		    line-height: 42px;
+	    }
+    }
+
+    .description:nth-child(2) {
+    	margin-right: 0;
+    	margin-left: 1%;
+    }
+
+    .image {
+        opacity: 1;
+
+        @media (min-width: 940px) {
+        	max-width: 100%;
+        }
+
+	    &__img {
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    }
+
+	    &__img:nth-child(2) {
+	    	margin-left: 0;
+	    	margin-right: auto;
+	    }
+    }
+}
+
+@media screen and (max-width: 940px) {
+	.item:nth-child(1) {
+		border-top: 0;
+	}
+
+	.item {
+    	border-top: solid 3px;
+    	border-image: linear-gradient(to left, black, purple, black) 1 0;
+    	padding: 10% 0;
+	    flex-direction: column;
+	}
+
+    .description {
+    	width: 100%;
+	    text-align: center;
+	    margin-bottom: 0!important;
+
+	    &__name {
+	    	padding: 5% 0;
+	    	text-align: center;
+		    line-height: 34px;
+		    letter-spacing: -.1px;
+	    }
+
+	    &__text {
+	    	text-align: center;
+		    line-height: 28px;
+	    }
+    }
+
+    .image {
+	    text-align: center;
+	    width: 100%;
+	    padding: 5% 0;
+
+	    &__img {
+		    margin-left: auto;
+		    margin-right: auto;
+	    }
+    }
+}
+
+
+
+@media screen and (max-width: 940px) and (max-height: 450px) {
+	.item {
+		padding: 1% 0;
+	}
+}
