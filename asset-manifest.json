@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/venvpage/static/css/main.66932671.css",
+    "main.js": "/venvpage/static/js/main.4b3bdadf.js",
+    "static/js/787.49f7242f.chunk.js": "/venvpage/static/js/787.49f7242f.chunk.js",
+    "static/media/illustration1.png": "/venvpage/static/media/illustration1.5c02aa7a8a93e8a86f67.png",
+    "static/media/home.png": "/venvpage/static/media/home.0fab7725ed159b2018ef.png",
+    "static/media/contact.png": "/venvpage/static/media/contact.1153bf0a692d9b5c03a3.png",
+    "static/media/illustration2.png": "/venvpage/static/media/illustration2.dce097e986e22f879165.png",
+    "static/media/illustration3.png": "/venvpage/static/media/illustration3.50df0ba89ab53d025576.png",
+    "static/media/mail.png": "/venvpage/static/media/mail.090dc571f375c373b552.png",
+    "static/media/about.png": "/venvpage/static/media/about.c4eabd74e0012b16c0a8.png",
+    "static/media/aim.png": "/venvpage/static/media/aim.7a03f475c56aeb6c3228.png",
+    "static/media/web.svg": "/venvpage/static/media/web.4393cca62263647093c89c07b165a7f0.svg",
+    "static/media/singer.svg": "/venvpage/static/media/singer.e39fe21197c5ae0a7ef3d9253ee69dc3.svg",
+    "index.html": "/venvpage/index.html",
+    "static/media/discord.svg": "/venvpage/static/media/discord.55f27c1591ba7d94ad08c35fb1399b2e.svg",
+    "static/media/music.svg": "/venvpage/static/media/music.627fd14928555ae5b1266b4ea02150a3.svg",
+    "static/media/telegram.svg": "/venvpage/static/media/telegram.b820897813fc40f87343d91f6efadf93.svg",
+    "static/media/twitter.svg": "/venvpage/static/media/twitter.f54089b17d71cf685a39ba029cf4d1c9.svg",
+    "static/media/ipfs.svg": "/venvpage/static/media/ipfs.6b45e9542d1f9091ae8018c84a23b15d.svg",
+    "static/media/blockchain.svg": "/venvpage/static/media/blockchain.4aaa6ac03a2072d903675a2ea4356981.svg",
+    "static/media/save.svg": "/venvpage/static/media/save.c271973e1ea966026afeec80925e4777.svg",
+    "main.66932671.css.map": "/venvpage/static/css/main.66932671.css.map",
+    "main.4b3bdadf.js.map": "/venvpage/static/js/main.4b3bdadf.js.map",
+    "787.49f7242f.chunk.js.map": "/venvpage/static/js/787.49f7242f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66932671.css",
+    "static/js/main.4b3bdadf.js"
+  ]
+}
